@@ -1,0 +1,6 @@
+a = list(range(4,156))
+
+for x in a:
+    if x!=1 and x%4==1:
+        continue
+    print(x)
