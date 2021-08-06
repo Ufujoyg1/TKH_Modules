@@ -1,0 +1,8 @@
+str = "Wipe the sweat of my dome spit the pleghm on the streets suede Timbs on my feets makes my chyper complete Whether cruising in Skih's cab or Montero Jeep I can't call it the beats make me falling asleep I keep falling but never falling six feet deep I'm out for presidents to represent me I'm out for dead presidents to represent me"
+
+str = str.replace('s', '$') 
+
+print("Modified string : ") 
+
+
+print(str)
