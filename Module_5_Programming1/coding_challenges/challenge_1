@@ -1,0 +1,20 @@
+celebrity_names = [  'Wesley Snipes', 'Nicholas Cage', 'Nasir Jones', 'Sean Carter', 'Sean Combs', 'Patrick Ewing' ]
+
+for name in celebrity_names: name.split() [0]
+
+celebrity_first_names = []
+for name in celebrity_names:
+     celebrity_first_names.append(name.split() [0])
+
+
+celebrity_names = [ 'Wesley Snipes', 'Nicholas Cage', 'Nasir Jones', 'Sean Carter', 'Sean Combs', 'Patrick Ewing' ]
+
+
+for name in celebrity_names: name.split() [-1]
+
+celebrity_last_names = []
+for name in celebrity_names:
+     celebrity_last_names.append(name.split() [-1])
+     
+print(celebrity_first_names)
+print(celebrity_last_names)
