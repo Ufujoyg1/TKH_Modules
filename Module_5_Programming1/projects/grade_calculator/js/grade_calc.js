@@ -30,7 +30,7 @@ function calculateGrade(allGrades){
 		avgGrade = totalGrade / allGrades.length;
 	}
 
-	if(avgGrade >= 95){
+	if(avgGrade >= 91){
 		finalGrade = finalGrades[0];
 		fDom.className = "green";
 	} else if(avgGrade >= 88 && avgGrade < 90) {
@@ -48,11 +48,11 @@ function calculateGrade(allGrades){
   } else if(avgGrade >= 67 && avgGrade < 70) {
      finalGrade = finalGrades[5];
     fDom.className =  "purple"
-  }else if(avgGrade >= 64 && avgGrade < 67) {
+  } else if(avgGrade >= 64 && avgGrade < 67) {
      finalGrade = finalGrades[6];
     fDom.className = "magenta"
-	} else {
-		finalGrade = finalGrades[7];
+	} else if(avgGrade >= 0 && avgGrade < 64) {
+		finalGrade = finalGrades[8];
 		fDom.className = "red";
 	}
 
