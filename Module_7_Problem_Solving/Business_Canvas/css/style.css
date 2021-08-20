@@ -1,0 +1,51 @@
+$font-base-size:16px;
+body{
+  margin: $font-base-size 2*$font-base-size;
+  font-size: $font-base-size;
+  font-family:"Trebuchet MS";
+  color: #DDD;
+  background-color: black;
+}
+
+/* COLOR ARRAY FOR DIV BACKGROUNDS */
+$colors-list: #16A #27B #38C #49D #5AE #49F #16B;
+@each $current-color in $colors-list {
+    $i: index($colors-list, $current-color);
+    section>div:nth-child(#{$i}) { 
+        background-color: $current-color;
+    }
+}
+
+
+.container {
+  font-size: 0.8*$font-base-size;
+  >section{
+    column-count:5;
+    column-gap:0px;
+    margin-top: 0.8*$font-base-size;
+    max-height:440px;
+    >div{
+      break-inside:avoid;
+      padding: 5px;
+      border: solid 1px black;
+      overflow:auto;
+      height:412px;
+      >header{
+        font-size: $font-base-size*1.4;
+        text-transform:uppercase;
+        text-align:center;
+      }
+      +:nth-child(2), +:nth-child(3), +:nth-child(5), +:nth-child(6){
+        height:200px;
+      }  
+    }
+  }
+  >section:nth-child(2){
+    column-count:2;
+    max-height:160px;
+    >div{
+      height:140px;
+    }
+  }
+ }
+
